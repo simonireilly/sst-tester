@@ -1,0 +1,26 @@
+{
+  "name": "sst-tester",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "AWS_PROFILE=${AWS_PROFILE:-cgu} sst test",
+    "start": "AWS_PROFILE=${AWS_PROFILE:-cgu} sst start",
+    "build": "AWS_PROFILE=${AWS_PROFILE:-cgu} sst build",
+    "deploy": "AWS_PROFILE=${AWS_PROFILE:-cgu} sst deploy",
+    "remove": "AWS_PROFILE=${AWS_PROFILE:-cgu} sst remove"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.98.0",
+    "@aws-sdk/client-dynamodb": "^3.15.0",
+    "@aws-sdk/lib-dynamodb": "^3.15.0",
+    "@types/aws-lambda": "^8.10.70",
+    "@types/pino": "^6.3.8",
+    "pino-pretty": "^4.8.0"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.98.0",
+    "@serverless-stack/cli": "0.18.0",
+    "@serverless-stack/resources": "0.18.0",
+    "pino": "^6.11.3"
+  }
+}
