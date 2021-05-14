@@ -1,6 +1,6 @@
 # SST Tester
 
-Stack to recrate issues observed with permissions
+Stack to recreate issues observed with permissions
 
 ## Recreation Steps
 
